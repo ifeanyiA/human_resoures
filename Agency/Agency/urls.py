@@ -6,5 +6,5 @@ urlpatterns = [
     #path to access django admin
     path('admin/', admin.site.urls),
     # path to render homepage
-    path('',views.home,name="home")
+    path('',views.home,name="home"),
 ]
