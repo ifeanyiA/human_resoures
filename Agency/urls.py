@@ -7,4 +7,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path to render homepage
     path('',views.home,name="home"),
+    #path to render opportunities page
+    path('opportunities',views.opportunities, name="opportunities"),
 ]
