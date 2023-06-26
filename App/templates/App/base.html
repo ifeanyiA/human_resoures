@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{% static "css/style.css" %}">
     <title>
     {% block title %}
-    Hr Mastery
+    Hr Screecher
     {% endblock title %}
     </title>
 </head>
@@ -24,24 +24,30 @@
    <div class="wrapper">
 
     <style>
-        body{
+        body
+        {
             background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)),  url("/static/img/frontend.jpg");
             background-position: center 0px;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            
         }
     </style>
-<head>
+<header>
     <nav class="navbar bavbar-expand-lg navbar-dark bg-dark">
         <div class="col-sm">
-            <a class="navbar-brand flex-grow-1">
-                <i class="text-warning fas fa-chart-pie"></i>
+            <a class="navbar-brand flex-grow-1" id="navbar-content">
+               {% block navbar-content %}
+               <i class="text-warning fas fa-chart-pie"></i>&nbsp;&nbsp; HR Screecher
+               {% endblock navbar-content %}
             </a>
         </div>
+         <!-- Link to navigate between the pages -->
+        {% block link %}
+
+        {% endblock link %}
     </nav>
-</head>
+</header>
     <!-- Block content -->
     {% block content %}
 
@@ -50,7 +56,7 @@
 <footer class="bg-dark text-center text-lg-start" id="footer" style="color: #fff;">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; {% now "Y" %} Copyright
         <a class="text-center" href="#" style="text-decoration: none;">
-            <spa class="text-warning">wwww.hr-mastery.net</span>
+            <spa class="text-warning">wwww.hr-Screecher.net</span>
         </a>
     </div>
 </footer>

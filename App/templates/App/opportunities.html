@@ -6,6 +6,23 @@
     Opportunities
 {% endblock title %}
 
+
+
+
+<!--Navbar for opportunities-->
+{% block navbar-content %}
+<i class="text-warning fas fa-code"></i>&nbsp;&nbsp; Opportunities
+{% endblock navbar-content %}
+
+<!-- Link to navigate between the pages -->
+{% block link %}
+
+<a href="{% url 'home' %}" style="margin-right:25px; font-size: 25px;" title="Go back">
+<i class="text-warning fas fa-angle-double-left"></i>
+</a>
+{% endblock link %}
+
+
  {% block content %}
  
 {% endblock content %}
