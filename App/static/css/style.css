@@ -58,5 +58,18 @@ html,body{
     border-radius: 30px;
     margin-bottom: -50px;
     
-        }
+    }
+/*======================================
+# side labels-- left side of the inputs
+====================================*/
+.side-label{
+    width: 50px;
+}
 
+/*======================================
+# BTN Cancel and send - button inside the modals
+====================================*/
+
+.btn-cancel, .btn-send{
+    width: 65px;
+}
