@@ -53,14 +53,22 @@
 
     {% endblock content %}
    </div>
+
+
+   <!--include (modals)-->
+   {% include "modals/frontend.html" %}
+   {% include "modals/fullstack.html" %}
+   {% include "modals/backend.html" %}
+    <!--End of wrapper-->
+
 <footer class="bg-dark text-center text-lg-start" id="footer" style="color: #fff;">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; {% now "Y" %} Copyright
         <a class="text-center" href="#" style="text-decoration: none;">
-            <spa class="text-warning">wwww.hr-Screecher.net</span>
+            <span class="text-warning">wwww.hr-Screecher.net</span>
         </a>
     </div>
 </footer>
-   <!--End of wrapper-->
+  
    <!--Bootstrap Js-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
    <!--jQuery-->
