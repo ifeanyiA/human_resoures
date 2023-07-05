@@ -35,30 +35,55 @@ function validateForm(){
         swal("Opsss !","Name field cannot be empty.","error");
         return false;
     }
+
+    else if(name == name.toUpperCase()){
+        document.getElementById("name").value=" ";
+        swal("Opsss !","Name field cannot be UPPERCASE.","info");
+        return false;
+    }
+
+    else if(name.split(' ').length < 2){
+        
+        swal("Opsss !","Your fullname is REQUIRED","info");
+        return false;
+    }
+
     else if(age == ""){
         swal("Opsss !","Age field cannot be empty.","error");
         return false;
     }
+
+    else if((age < 18) || (age > 50)){
+        document.getElementById('age').value='';
+        swal("Opsss !","Age only between 18 and 50 years old","info");
+        return false;
+    }
+
     else if(email == ""){
         swal("Opsss !","Email field cannot be empty.","error");
         return false;
     }
+
     else if(phone == ""){
         swal("Opsss !","Phone field cannot be empty.","error");
         return false;
     }
+
     else if(experience == ""){
         swal("Opsss !","Experience field cannot be empty.","error");
         return false;
     }
+    
     else if(skills == ""){
         swal("Opsss !","Skills field cannot be empty.","error");
         return false;
     }
+
     else if(file == ""){
         swal("Opsss !","File field cannot be empty.","error");
         return false;
     }
+
     else{
         return true;
     }
