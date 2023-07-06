@@ -293,3 +293,49 @@ $(document).ready(function(){
 
 
    });
+
+
+   // 6) Prevent starting with space in all inputs (including textarea)
+
+   $("input[type='text'], input[type='tel'], textarea").on("keypress",function(e){
+        if(e.which === 32 && !this.value.length){
+             e.preventDefault();
+            }
+   });
+
+   // 7) Allow only numbers in AGE
+
+   $(".age").keyup(function(){
+    if(!/^[0-9]*$/.test(this.value)){
+       this.value = this.value.split(/[^0-9]/).join(''); 
+    }
+   });
+
+
+   //8) Limiting the AGE INPUT to two,if age is greater than 50 auto clear
+
+   $(".age").keyup(function(){
+    if((this.value) > 50){
+        this.value = '';
+    }
+
+   });
+
+
+
+   //9) Prevent starting age by zero in AGE field
+$(".age").on("input",function(){
+    if(/^0/.test(this.value)){
+        this.value = this.value.replace(/^0/, "");
+    }
+
+});
+
+   //10) Script to LOWERCASE input email
+
+   $(document).ready(function(){
+    $(".email").keyup(function(){
+        this.value = this.value.toLowerCase();
+
+    });
+   });
