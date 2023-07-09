@@ -17,6 +17,7 @@ def opportunities(request):
     template_name="App/opportunities.html"
    
     return render(request,template_name)
+    
 # =============================== RESUMES ========================= 
 
  # Function to send frontend form
