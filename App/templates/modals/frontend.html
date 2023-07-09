@@ -14,7 +14,8 @@ id="frontendModal"
 <!--Form Validation-->
 {% block validation %} onsubmit="return validateForm()" {% endblock validation %}
 
-
+<!--Form action -->
+{% block action %} action="{% url 'email_frontend' %}" {% endblock action %} 
 
 <!-- ========================INPUT ID ==========================-->
 <!--Name-->

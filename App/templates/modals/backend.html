@@ -14,6 +14,9 @@ id="backendModal"
 <!--Form Validation-->
 {% block validation %} onsubmit="return validateForm2()" {% endblock validation %}
 
+<!--Form action -->
+{% block action %} action="{% url 'email_backend' %}" {% endblock action %} 
+
 <!-- ========================INPUT ID ==========================-->
 <!--Name-->
 {% block id-name %}  id="name2"   {% endblock id-name %} 
