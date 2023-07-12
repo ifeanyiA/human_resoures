@@ -11,18 +11,18 @@
             <hr style="width: 90%;"><br>
 
         <p style="font-size: 18px; text-align: left; margin-left: 40px;"><strong> PERSONAL DATA</strong></p>
-        <p style="font-size: 15px; text-align: left; margin-left: 40px;"><strong> Age: </strong>{{ age }}</p>
-        <p style="font-size: 15px; text-align: left; margin-left: 40px;"><strong> Phonw: </strong>{{ phone }}</p>
-        <p style="font-size: 15px; text-align: left; margin-left: 40px;"><strong> Email: </strong>{{ email }}</p>
-        <p style="font-size: 15px; text-align: left; margin-left: 40px;"><strong> Address</strong>{{ address }}</p>
+        <p style="font-size: 15px; text-align: left; margin-left: 40px;"><strong>Age : </strong>&nbsp; {{ age }}</p>
+        <p style="font-size: 15px; text-align: left; margin-left: 40px;"><strong>Phone : </strong>&nbsp;{{ phone }}</p>
+        <p style="font-size: 15px; text-align: left; margin-left: 40px;"><strong>Email : </strong>&nbsp;{{ email }}</p>
+        <p style="font-size: 15px; text-align: left; margin-left: 40px;"><strong>Address :</strong>&nbsp;{{ address }}</p>
        
 <div style="text-align: left; margin-left: 40px; margin-right: 35px;">
     <br>
     <p style="font-size: 18px;"><strong>EXPERIENCE</strong></p>
-    <textarea rows="15" style="width: 100%; border: none; overflow: hidden;">{{ experience }}</textarea>
+    <textarea rows="15" style="width: 100%; border: none; overflow: hidden;">&nbsp;{{ experience }}</textarea>
     <br><br>
     <p style="font-size: 18px;"><strong>SKILLS</strong></p>
-    <textarea rows="16" style="width: 100%; border: none; overflow: hidden;">{{ skills }}</textarea>
+    <textarea rows="16" style="width: 100%; border: none; overflow: hidden;">&nbsp;{{ skills }} </textarea>
 
 </div>
 <br><br><br><br><hr style="color: #d3d3d3; width: 90%;">
