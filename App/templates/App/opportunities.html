@@ -17,8 +17,8 @@
 <!-- Link to navigate between the pages -->
 {% block link %}
 
-<a href="{% url 'home' %}" style="margin-right:25px; font-size: 25px;" title="Go back">
-<i class="text-warning fas fa-angle-double-left"></i>
+<a href="{% url 'home' %}" id="back" title="Go back">
+<i class="text-warning fas fa-angle-double-left" ></i>
 </a>
 {% endblock link %}
 
@@ -26,7 +26,7 @@
  {% block content %}
  <div class="container mt-4" style="width: 80%;">
     <div class="justify-content-center align-item-center row">
-        <h6 class="btn btn-warning" style="width: 100%; cursor: default;"> 
+        <h6 class="btn btn-warning"  id="card-title" style="width: 100%; cursor: default;"> 
             <strong>AVAILABLE JOB OPPORTUNITIES</strong> 
         </h6>
         <div class="shadow-lg card p-3 mt-3" style="background-color: rgba(0, 0, 0, 0.5);">

@@ -7,7 +7,8 @@ html,body{
     height: 100%;
     margin: 0;
     max-width: 100%;
-    overflow: hidden;
+   
+    
 }
 
 /*======================================
@@ -65,7 +66,10 @@ html,body{
 .side-label{
     width: 50px;
 }
-
+#back{
+    margin-right: 25px;
+    font-size: 25px;
+}
 /*======================================
 # BTN Cancel and send - button inside the modals
 ====================================*/
@@ -183,4 +187,50 @@ html,body{
         transform:rotate(360deg);
     }
     
+}
+
+
+
+/*======================================
+#  RESPONSIVE MODES
+====================================*/
+/* Resolution for Tablets */
+@media screen and (max-width: 1024px) {
+    #footer{
+        font-size: 15px;
+    }       
+}
+
+@media screen and (max-width:575px) {
+    #footer{
+        font-size: 12px;
+    }
+
+    body{
+        overflow-y: visible !important;
+    }
+
+    #navbar-content{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .typed-effect{
+        font-size:24px;
+    }
+    #btn-job{
+        font-size: 15px;
+        width: 200px;
+    }
+    .jobs{
+        font-size: 13px;
+
+    }
+    #card-title{
+        font-size: 14px;
+    }
+
+    #back{
+        font-size: 20px;
+        margin-right: 20px;
+    }
 }
