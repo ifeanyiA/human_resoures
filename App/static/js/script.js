@@ -31,60 +31,71 @@ $(document).ready(function(){
        const file = document.getElementById("file").value;
    
        if(name == ""){
+           document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Name field cannot be empty.","error");
            return false;
        }
    
        else if(name == name.toUpperCase()){
+        document.getElementById("bg-spinner").style.display ="none";
            document.getElementById("name").value=" ";
            swal("Opsss !","Name field cannot be UPPERCASE.","info");
            return false;
        }
    
        else if(name.split(' ').length < 2){
+        document.getElementById("bg-spinner").style.display ="none";
            
            swal("Opsss !","Your fullname is REQUIRED","info");
            return false;
        }
    
        else if(age == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Age field cannot be empty.","error");
            return false;
        }
    
        else if((age < 18) || (age > 50)){
+        document.getElementById("bg-spinner").style.display ="none";
            document.getElementById('age').value='';
            swal("Opsss !","Age only between 18 and 50 years old","info");
            return false;
        }
    
        else if(email == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Email field cannot be empty.","error");
            return false;
        }
    
        else if(!(validateEmail(email))){
+        document.getElementById("bg-spinner").style.display ="none";
            document.getElementById('email').value='';
            swal("Opsss !","Put a valid email address.","error");
            return false;
        }
    
        else if(phone == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Phone field cannot be empty.","error");
            return false;
        }
    
        else if(experience == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Experience field cannot be empty.","error");
            return false;
        }
        
        else if(skills == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Skills field cannot be empty.","error");
            return false;
        }
    
        else if(file == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","File field cannot be empty.","error");
            return false;
        }
@@ -114,60 +125,71 @@ $(document).ready(function(){
        const file2 = document.getElementById("file2").value;
    
        if(name2 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Name field cannot be empty.","error");
            return false;
        }
    
        else if(name2 == name2.toUpperCase()){
+        document.getElementById("bg-spinner").style.display ="none";
            document.getElementById("name2").value=" ";
            swal("Opsss !","Name field cannot be UPPERCASE.","info");
            return false;
        }
    
        else if(name2.split(' ').length < 2){
+        document.getElementById("bg-spinner").style.display ="none";
            
            swal("Opsss !","Your fullname is REQUIRED","info");
            return false;
        }
    
        else if(age2 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Age field cannot be empty.","error");
            return false;
        }
    
        else if((age2 < 18) || (age2 > 50)){
+        document.getElementById("bg-spinner").style.display ="none";
            document.getElementById('age2').value='';
            swal("Opsss !","Age only between 18 and 50 years old","info");
            return false;
        }
    
        else if(email2 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Email field cannot be empty.","error");
            return false;
        }
    
        else if(!(validateEmail2(email2))){
+        document.getElementById("bg-spinner").style.display ="none";
            document.getElementById('email2').value='';
            swal("Opsss !","Put a valid email address.","error");
            return false;
        }
    
        else if(phone2 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Phone field cannot be empty.","error");
            return false;
        }
    
        else if(experience2 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Experience field cannot be empty.","error");
            return false;
        }
        
        else if(skills2 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Skills field cannot be empty.","error");
            return false;
        }
    
        else if(file2 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","File field cannot be empty.","error");
            return false;
        }
@@ -195,6 +217,7 @@ $(document).ready(function(){
        const file3 = document.getElementById("file3").value;
    
        if(name3 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Name field cannot be empty.","error");
            return false;
        }
@@ -206,49 +229,57 @@ $(document).ready(function(){
        }
    
        else if(name3.split(' ').length < 2){
-           
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Your fullname is REQUIRED","info");
            return false;
        }
    
        else if(age3 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Age field cannot be empty.","error");
            return false;
        }
    
        else if((age3 < 18) || (age3 > 50)){
+        document.getElementById("bg-spinner").style.display ="none";
            document.getElementById('age3').value='';
            swal("Opsss !","Age only between 18 and 50 years old","info");
            return false;
        }
    
        else if(email3 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Email field cannot be empty.","error");
            return false;
        }
    
        else if(!(validateEmail3(email3))){
+        document.getElementById("bg-spinner").style.display ="none";
            document.getElementById('email3').value='';
            swal("Opsss !","Put a valid email address.","error");
            return false;
        }
    
        else if(phone3 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Phone field cannot be empty.","error");
            return false;
        }
    
        else if(experience3 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Experience field cannot be empty.","error");
            return false;
        }
        
        else if(skills3 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","Skills field cannot be empty.","error");
            return false;
        }
    
        else if(file3 == ""){
+        document.getElementById("bg-spinner").style.display ="none";
            swal("Opsss !","File field cannot be empty.","error");
            return false;
        }
